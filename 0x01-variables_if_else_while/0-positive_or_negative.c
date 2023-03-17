@@ -2,8 +2,10 @@
 #include <time.h>
 /* more headers*/
 #include <stdio.h>
-/*
- * main - will assign a random number to the variable each time it is executed
+/**
+ * main - Entry point
+ *
+ * Description: 'negative or positive number'
  *
  * Return: Always 0(success)
 */
