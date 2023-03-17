@@ -1,3 +1,4 @@
+#include<stdio.h>
 #include<stdlib.h>
 #include<time.h>
 /*
@@ -20,9 +21,10 @@ int main(void)
 		printf("is zero\n");
 	}
 	if (n<0)
-	{	print("is negative\n");
+	{	printf("is negative\n");
 	
 	}
 
 	return (0);
+}
 
