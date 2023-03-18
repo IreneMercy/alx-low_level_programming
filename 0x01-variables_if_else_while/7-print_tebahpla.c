@@ -2,13 +2,12 @@
 /**
  * main - Entry point
  *
- * Description: 'print lowercase alphabet in reverse'
+ * Description: 'prints the lowercase alphabet in reverse'
  *
  * Return: 0 (Success)
  */
 int main(void)
 {
-
 char ch;
 
 for (ch = 'z'; ch >= 'a'; ch--)
