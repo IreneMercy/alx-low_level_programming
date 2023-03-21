@@ -1,9 +1,12 @@
 #include "main.h"
 /**
  * main - Prints _putchar
- * int main(void) - main function of _putchar
- * Return: 0 (success)
-*/
+ *
+ * Description: main function printing _putchar
+ *
+ * Return: 0
+ *
+ */
 int main(void)
 {
 	_putchar('_');
