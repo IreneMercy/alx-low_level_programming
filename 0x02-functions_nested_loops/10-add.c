@@ -11,6 +11,5 @@ int add(void)
 	int n, m, sum;
 
 	sum = n + m;
-	_putchar(sum);
 	return (0);
 }
