@@ -2,14 +2,14 @@
 #include <stdio.h>
 
 /**
- * add - check the code
+ * main - check the code
+ * @n: sum
+ *
+ * @m: sum
  *
  * Return: Always 0.
  */
-int add(void)
+int main(int n, int m)
 {
-	int n, m, sum;
-
-	sum = n + m;
-	return (0);
+	return (n + m);
 }
