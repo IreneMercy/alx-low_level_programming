@@ -2,15 +2,15 @@
 #include <stdio.h>
 
 /**
- * main - check the code
+ * add - check the code
  *
  * Return: Always 0.
  */
-int main(void)
+int add(void)
 {
-	int n, m, sum = 0;
+	int n, m, sum;
 
 	sum = n + m;
-	_putchar("%d\n", sum);
+	_putchar(sum);
 	return (0);
 }
