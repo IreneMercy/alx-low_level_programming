@@ -7,8 +7,11 @@
  */
 void print_to_98(int i)
 {
-	for (i = 1; i <= 98; i++)
+	for (i = 0; i <= 98; i++)
 	{
 		_putchar(i);
 	}
+	_putchar(", ");
+	_putchar(" ");
+	return (0);
 }
