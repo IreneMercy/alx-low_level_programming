@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * main - Enty point.
+ * _isupper - Enty point.
  * @c: char to check.
  * Return: Always 0.
  */
-int main(void)
+int _isupper(int c)
 {
 	char c;
 
