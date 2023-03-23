@@ -8,4 +8,5 @@ void print_numbers(void);
 void print_most_numbers(void);
 void print_triangle(int size);
 int _putchar(char c);
+void more_numbers(void);
 #endif
