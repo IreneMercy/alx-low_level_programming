@@ -4,7 +4,7 @@ int square_root(int n, int m);
 
 /**
  * _sqrt_recursion - function that returns the natural square root of a number
- * @n: value
+ * * @n: value
  * Return: 0
  */
 int _sqrt_recursion(int n)
@@ -16,6 +16,14 @@ int _sqrt_recursion(int n)
 	return (square_root(n, 0));
 
 }
+
+/**
+ * square_root - function that finds square root
+ * @n: value
+ * @m: value
+ * Return: 0
+ */
+
 int square_root(int n, int m)
 {
 	if (m * m > n)
