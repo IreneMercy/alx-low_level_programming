@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-	
+
 	val_1 = _atoi(argv[1]);
 	val_2 = _atoi(argv[2]);
 	total = val_1 * val_2;
@@ -44,7 +44,7 @@ int _atoi(char *s)
 	int i = 0;
 	int j = 0;
 	int rt = 0;
-	
+
 	while (s[i] != '\0')
 		i++;
 	while (x < i && j == 0)
@@ -67,5 +67,5 @@ int _atoi(char *s)
 	if (j == 0)
 		return (0);
 
-	return(z);
+	return (z);
 }
