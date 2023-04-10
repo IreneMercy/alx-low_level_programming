@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
-* main - Entry point
+* _puts - Entry point
 * @s: pointer to string
 * Return: Always 0 (success)
 */
