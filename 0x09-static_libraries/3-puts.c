@@ -1,14 +1,11 @@
 #include<stdio.h>
 /**
-* _puts - Entry point
-* @s: string value
+* main - Entry point
+*
 * Return: Always 0 (success)
 */
-void _puts(char *s)
+int main(void)
 {
-	while (*s != '\0')
-	{
-		_putchar(*s++);
-	}
-	_putchar("\n");
+	puts("\"Programming is like building a multilingual puzzle");
+	return (0);
 }
