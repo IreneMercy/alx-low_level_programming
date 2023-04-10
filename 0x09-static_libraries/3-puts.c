@@ -1,12 +1,16 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
-* _puts - Entry point
-* @s: pointer to string
-* Return: Always 0 (success)
-*/
+ * _puts - prints a string
+ * @s: pointer to string
+ * Return: void
+ */
 void _puts(char *s)
 {
-	puts(s);
+	while (*s != '\0')
+	{
+		_putchar(*s + 0);
+		++s;
+	}
+	_putchar('\n');
 }
