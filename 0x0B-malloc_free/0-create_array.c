@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * *_strdup - function that creates an array of chars
+ * *create_array - function that creates an array of chars
  * @size: size of array
  * @c: character value
  * Return: 0
