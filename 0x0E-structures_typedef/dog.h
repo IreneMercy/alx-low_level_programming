@@ -2,7 +2,7 @@
 #define HEADER_FILE
 
 /**
- * dog - structure for a dog
+ * struct dog - structure for a dog
  * @name: name of dog
  * @age: age of dog
  * @owner: the dog owner
