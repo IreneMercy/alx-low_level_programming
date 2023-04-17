@@ -1,5 +1,5 @@
-#include <stdlib.h>
-#include <stdio.h>
+#ifndef HEADER_FILE
+#define HEADER_FILE
 
 /**
  * dog - structure for a dog
