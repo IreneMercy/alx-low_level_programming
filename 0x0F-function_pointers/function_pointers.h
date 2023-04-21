@@ -1,5 +1,7 @@
-#ifndef HEADER_FILE
-#define HEADER_FILE
+#ifndef FUNCTION_FILE
+#define FUNCTION_FILE
+
+#include <stddef.h>
 
 void print_name(char *name, void (*f)(char *));
 int _putchar(char c);

@@ -1,6 +1,5 @@
 #include "3-calc.h"
-#include <stdlib.h>
-
+#include <stddef.h>
 /**
  * get_op_func - contain correct function to perform
  * the operation asked by the user
@@ -15,13 +14,14 @@ int (*get_op_func(char *s))(int, int)
 		{"*", op_mul},
 		{"/", op_div},
 		{"%", op_mod},
-		{NULL, NULL}
+		{NULL, NULL},
 	};
 
 	int i;
 
-	while (ops[i].op != NULL && *(ops[i].op) != *s)
+	while (ops[i].op != NULL && *(ops[i].op) != s)
+	{
 		i++;
-
+	}
 	return (ops[i].f);
 }
