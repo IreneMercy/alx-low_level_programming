@@ -5,16 +5,17 @@
 
 /**
  * free_listint - frees a listint_t list
+ * @head: pointer to function
  */
 
 void free_listint(listint_t *head)
 {
-	listint_t *end_node;
+	listint_t *final_node;
 
-	while (head)
+	while (head != NULL)
 	{
-		end_node = head->next;
-		free(head);
-		head = end_node;
+		final_node = head;
+		head = head->next;
+		free(final_node);
 	}
 }
