@@ -18,9 +18,12 @@ void free_listint2(listint_t **head)
 		*head = (*head)->next;
 		free(final_node);
 	}
-	if (*head == NULL)
+	if (*head == NULL || head == NULL)
 	{
 		return;
 	}
-	*head = NULL;
+	else
+	{
+		head = NULL;
+	}
 }
