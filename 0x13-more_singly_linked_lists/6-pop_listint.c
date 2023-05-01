@@ -11,7 +11,7 @@
 int pop_listint(listint_t **head)
 {
 	listint_t *fill;
-	int data = (*head)->n;
+	int temp_data;
 
 	if (head == NULL || *head == NULL)
 	{
@@ -19,8 +19,9 @@ int pop_listint(listint_t **head)
 	}
 
 	fill = *head;
+	temp_data = (*head)->n;
 	*head = (*head)->next;
 	free(fill);
 
-	return (data);
+	return (temp_data);
 }
