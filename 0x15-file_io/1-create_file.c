@@ -10,26 +10,26 @@ ssize_t read_textfile(const char *filename, size_t letters);
 
 int create_file(const char *filename, char *text_content)
 {
-	int fd, written_bytes, len;
+	int fd, results = 1, len = 0;
 
-	if (filename == NULL)
-	{
+	if (!filename)
 		return (-1);
-	}
 
-	if (text_content != NULL)
+	fd = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
+	if (fd == -1)
+		return (-1);
+
+	if (text_content)
 	{
-		for (len = 0; text_content[len];)
+		while (text_content[len])
+		{
 			len++;
+			results = write(fd, text_content, len);
+		}
 	}
 
-	fd = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
-	written_bytes = write(fd, text_content, len);
-
-	if (fd == -1 || written_bytes == -1)
+	if (results == -1)
 		return (-1);
-
 	close(fd);
-
 	return (1);
 }
