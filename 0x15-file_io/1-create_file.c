@@ -10,7 +10,7 @@ ssize_t read_textfile(const char *filename, size_t letters);
 
 int create_file(const char *filename, char *text_content)
 {
-	int fd, results = 1, len = 0;
+	int fd, results, len;
 
 	if (!filename)
 		return (-1);
@@ -19,14 +19,11 @@ int create_file(const char *filename, char *text_content)
 	if (fd == -1)
 		return (-1);
 
-	if (text_content)
-	{
-		while (text_content[len])
-		{
-			len++;
-			results = write(fd, text_content, len);
-		}
-	}
+	if (!text_content)
+		text_content = "";
+	for (len = 0; text_content[len];)
+		len++;
+	results = write(fd, text_content, len);
 
 	if (results == -1)
 		return (-1);
